@@ -17,6 +17,14 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : "rgb(" + values.join(", ") + ")";
   }
 
+  function openUrlInNewTab(url) {
+    if (!url) {
+      return;
+    }
+    var win = window.open(url, "_blank");
+    win.focus();
+  }
+
   const GetDescBullets = ({descBullets, isDark}) => {
     return descBullets
       ? descBullets.map((item, i) => (
@@ -78,6 +86,16 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
+        {cardInfo.certificateLink ? (
+          <div className="project-card-footer">
+            <span
+              className={isDark ? "dark-mode project-tag" : "project-tag"}
+              onClick={() => openUrlInNewTab(cardInfo.certificateLink)}
+            >
+              View Certificate
+            </span>
+          </div>
+        ) : null}
       </div>
     </div>
   );

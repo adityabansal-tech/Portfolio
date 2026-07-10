@@ -168,31 +168,32 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
       role: "Quantitative Research & Software Engineering Simulation",
       company: "J.P. Morgan Chase & Co.",
-      companylogo: "https://logo.clearbit.com/jpmorganchase.com",
+      companylogo: "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_of_JPMorganChase_2024.svg",
       date: "Jan 2026",
       desc: "Engineered programmatic financial data solutions using Python, optimizing algorithmic execution to handle high-frequency data streams under fast-paced production conditions.",
       descBullets: [
         "Applied strict software engineering principles to ensure code reliability, fault tolerance, and system scalability"
-      ]
+      ],
+      certificateLink: `${process.env.PUBLIC_URL}/certificates/jpmorgan-quant-research-simulation.pdf`
     },
     {
       role: "Data Analytics Virtual Intern",
       company: "Deloitte Australia (via Forage)",
-      companylogo: "https://logo.clearbit.com/deloitte.com",
+      companylogo: "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_of_Deloitte.svg",
       date: "Feb 2026",
       desc: "Engineered an interactive data visualization system using Tableau, converting complex raw business datasets into scalable dashboards for executive-level performance tracking.",
       descBullets: [
         "Conducted advanced data cleaning, statistical analysis, and algorithmic filtering on large-scale datasets in Excel to identify business-critical KPIs"
-      ]
+      ],
+      certificateLink: `${process.env.PUBLIC_URL}/certificates/deloitte-data-analytics-simulation.pdf`
     }
   ]
 };
-
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
@@ -267,41 +268,78 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "AWS Certified Solutions Architect – Associate",
-      subtitle: "Amazon Web Services",
-      image: "https://logo.clearbit.com/aws.amazon.com",
+      subtitle: "Amazon Web Services · Issued Mar 2026",
+      image: "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon_Web_Services_Logo.svg",
       imageAlt: "AWS Logo",
-      footerLink: []
+      footerLink: [
+        {name: "View Certificate", url: `${process.env.PUBLIC_URL}/certificates/aws-solutions-architect-associate.pdf`}
+      ]
     },
     {
-      title: "Oracle Cloud Infrastructure 2025 Data Science Professional",
-      subtitle: "Oracle",
-      image: "https://logo.clearbit.com/oracle.com",
+      title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+      subtitle: "Oracle University · Issued Feb 2026",
+      image: "https://commons.wikimedia.org/wiki/Special:FilePath/Oracle_logo.svg",
       imageAlt: "Oracle Logo",
-      footerLink: []
+      footerLink: [
+        {name: "View Certificate", url: `${process.env.PUBLIC_URL}/certificates/oracle-ai-foundations-associate.pdf`}
+      ]
     },
     {
-      title: "Data Analytics & AI Certification",
-      subtitle: "Microsoft",
-      image: "https://logo.clearbit.com/microsoft.com",
-      imageAlt: "Microsoft Logo",
-      footerLink: []
+      title: "Oracle Data Platform 2025 Certified Foundations Associate",
+      subtitle: "Oracle University · Issued Feb 2026",
+      image: "https://commons.wikimedia.org/wiki/Special:FilePath/Oracle_logo.svg",
+      imageAlt: "Oracle Logo",
+      footerLink: [
+        {name: "View Certificate", url: `${process.env.PUBLIC_URL}/certificates/oracle-data-platform-foundations-associate.pdf`}
+      ]
     },
     {
-      title: "Data Analysis, Visualization, and SQL/Relational Databases",
-      subtitle: "IBM",
-      image: "https://logo.clearbit.com/ibm.com",
+      title: "AI Fundamentals with IBM SkillsBuild",
+      subtitle: "IBM · Cisco Networking Academy · Issued Feb 2026",
+      image: "https://commons.wikimedia.org/wiki/Special:FilePath/IBM_logo.svg",
       imageAlt: "IBM Logo",
-      footerLink: []
+      footerLink: [
+        {name: "View Certificate", url: "https://www.credly.com/badges/f56822a0-9315-451e-ab03-8ba5060fe6fe/public_url"}
+      ]
     },
     {
-      title: "Python Essentials 1 & 2",
-      subtitle: "Cisco",
-      image: "https://logo.clearbit.com/cisco.com",
+      title: "Python Essentials 1",
+      subtitle: "Cisco Networking Academy · OpenEDG Python Institute",
+      image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cisco_logo.svg",
       imageAlt: "Cisco Logo",
-      footerLink: []
+      footerLink: [
+        {name: "View Certificate", url: `${process.env.PUBLIC_URL}/certificates/python-essentials-1.pdf`}
+      ]
+    },
+    {
+      title: "Python Essentials 2",
+      subtitle: "Cisco Networking Academy · OpenEDG Python Institute",
+      image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cisco_logo.svg",
+      imageAlt: "Cisco Logo",
+      footerLink: [
+        {name: "View Certificate", url: `${process.env.PUBLIC_URL}/certificates/python-essentials-2.pdf`}
+      ]
+    },
+    {
+      title: "Front End Web Developer Certification",
+      subtitle: "Infosys Springboard · Issued Jan 2026",
+      image: "https://commons.wikimedia.org/wiki/Special:FilePath/Infosys_logo.svg",
+      imageAlt: "Infosys Logo",
+      footerLink: [
+        {name: "View Certificate", url: `${process.env.PUBLIC_URL}/certificates/infosys-front-end-web-developer.pdf`}
+      ]
+    },
+    {
+      title: "Data Analyst 101",
+      subtitle: "Issued Mar 2026",
+      image: "https://commons.wikimedia.org/wiki/Special:FilePath/Data_icon.svg",
+      imageAlt: "Certificate",
+      footerLink: [
+        {name: "View Certificate", url: `${process.env.PUBLIC_URL}/certificates/data-analyst-101.pdf`}
+      ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Blogs Section

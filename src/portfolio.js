@@ -175,7 +175,7 @@ const workExperiences = {
     {
       role: "Quantitative Research & Software Engineering Simulation",
       company: "J.P. Morgan Chase & Co.",
-      companylogo: `${process.env.PUBLIC_URL}/logos/jpmorgan-logo.png`,      date: "Jan 2026",
+      companylogo: `${process.env.PUBLIC_URL}/logos/jpmorgan-logo.png`,      date: "July 2026",
       desc: "Engineered programmatic financial data solutions using Python, optimizing algorithmic execution to handle high-frequency data streams under fast-paced production conditions.",
       descBullets: [
         "Applied strict software engineering principles to ensure code reliability, fault tolerance, and system scalability"

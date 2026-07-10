@@ -125,6 +125,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "ITS Engineering College (AKTU)",
+      logo: `${process.env.PUBLIC_URL}/logos/its-engineering-college-logo.png`,
       // logo: require("./assets/images/yourCollegeLogo.png"), // add your college logo image here (see notes below)
       subHeader: "Bachelor of Technology (B.Tech) in Computer Science Engineering",
       duration: "Expected Graduation: May 2027 · CGPA: 7.8/10.0",
@@ -135,6 +136,7 @@ const educationInfo = {
     },
     {
       schoolName: "Maharaja Agrasen Public School",
+      logo: `${process.env.PUBLIC_URL}/logos/maharaja-agrasen-school-logo.png`,
       subHeader: "Senior Secondary (Class XII) — CBSE",
       duration: "Delhi · 2023",
       desc: "Scored 87.6% in CBSE Class 12 board examinations.",
@@ -173,8 +175,7 @@ const workExperiences = {
     {
       role: "Quantitative Research & Software Engineering Simulation",
       company: "J.P. Morgan Chase & Co.",
-      companylogo: "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_of_JPMorganChase_2024.svg",
-      date: "Jan 2026",
+      companylogo: `${process.env.PUBLIC_URL}/logos/jpmorgan-logo.png`,      date: "Jan 2026",
       desc: "Engineered programmatic financial data solutions using Python, optimizing algorithmic execution to handle high-frequency data streams under fast-paced production conditions.",
       descBullets: [
         "Applied strict software engineering principles to ensure code reliability, fault tolerance, and system scalability"
@@ -184,8 +185,7 @@ const workExperiences = {
     {
       role: "Data Analytics Virtual Intern",
       company: "Deloitte Australia (via Forage)",
-      companylogo: "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_of_Deloitte.svg",
-      date: "Feb 2026",
+      companylogo: `${process.env.PUBLIC_URL}/logos/deloitte-logo.png`,      date: "Feb 2026",
       desc: "Engineered an interactive data visualization system using Tableau, converting complex raw business datasets into scalable dashboards for executive-level performance tracking.",
       descBullets: [
         "Conducted advanced data cleaning, statistical analysis, and algorithmic filtering on large-scale datasets in Excel to identify business-critical KPIs"
@@ -331,12 +331,12 @@ const achievementSection = {
     },
     {
       title: "Data Analyst 101",
-      subtitle: "Issued Mar 2026",
-      image: "https://commons.wikimedia.org/wiki/Special:FilePath/Data_icon.svg",
-      imageAlt: "Certificate",
+      subtitle: "Microsoft · Issued Mar 2026",
+      image: "https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft_logo.svg",
+      imageAlt: "Microsoft Logo",
       footerLink: [
-        {name: "View Certificate", url: `${process.env.PUBLIC_URL}/certificates/data-analyst-101.pdf`}
-      ]
+      {name: "View Certificate", url: `${process.env.PUBLIC_URL}/certificates/data-analyst-101.pdf`}
+     ]
     }
   ],
   display: true

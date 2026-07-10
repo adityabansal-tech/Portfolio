@@ -120,7 +120,6 @@ https://fontawesome.com/icons?d=gallery */
 };
 
 // Education Section
-
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
@@ -131,10 +130,16 @@ const educationInfo = {
       duration: "Expected Graduation: May 2027 · CGPA: 7.8/10.0",
       desc: "Currently in 4th year (penultimate year). Relevant coursework: Data Structures & Algorithms, Operating Systems, Database Management Systems (SQL), Object-Oriented Programming, Distributed Systems, and System Design.",
       descBullets: []
+    },
+    {
+      schoolName: "Maharaja Agrasen Public School",
+      subHeader: "Senior Secondary (Class XII) — CBSE",
+      duration: "Delhi · 2023",
+      desc: "Scored 87.6% in CBSE Class 12 board examinations.",
+      descBullets: []
     }
   ]
 };
-
 // Your top proficient stacks/tech experience
 
 const techStack = {
@@ -189,11 +194,10 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Projects you have worked on
-
 const bigProjects = {
   title: "Projects",
   subtitle: "AI, DATA & FULL-STACK PROJECTS I'VE BUILT",
@@ -204,6 +208,10 @@ const bigProjects = {
       projectDesc:
         "End-to-end NLP system that extracts technical skills and programmatically matches candidates to job descriptions. Custom keyword-matching algorithms and text-parsing pipelines improved screening efficiency by ~50%.",
       footerLink: [
+        {
+          name: "Live Demo",
+          url: "https://ai-resume-analyzer-nine-lemon.vercel.app/"
+        },
         {
           name: "GitHub Repo",
           url: "https://github.com/adityabansal-tech/AI-resume-analyzer"
@@ -217,6 +225,10 @@ const bigProjects = {
         "Full-stack Flask web app that calculates real-time carbon emissions for transit routes and handles concurrent user API requests. Integrated Google Gemini LLM with structured prompt engineering to parse transit datasets, cutting data-processing overhead by 20%. Relational schema built with SQLAlchemy for high data integrity and low-latency lookups.",
       footerLink: [
         {
+          name: "Live Demo",
+          url: "https://sros-kohl.vercel.app/"
+        },
+        {
           name: "GitHub Repo",
           url: "https://github.com/adityabansal-tech/SROS-main"
         }
@@ -229,15 +241,18 @@ const bigProjects = {
         "Data analytics engine using Python and SQL to query and monitor large-scale historical sales KPIs. Optimized query parameters to compute revenue trends and product performance benchmarks, reducing manual processing overhead by ~40%.",
       footerLink: [
         {
+          name: "Live Demo",
+          url: "https://sales-insights-analytics-6cv32bjxi7gwtevdpth26q.streamlit.app/"
+        },
+        {
           name: "GitHub Repo",
           url: "https://github.com/adityabansal-tech/Sales-insights-analytics."
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
-
 // Achievement Section
 // Include certificates, talks etc
 

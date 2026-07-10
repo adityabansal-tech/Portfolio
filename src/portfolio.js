@@ -128,8 +128,10 @@ const educationInfo = {
       // logo: require("./assets/images/yourCollegeLogo.png"), // add your college logo image here (see notes below)
       subHeader: "Bachelor of Technology (B.Tech) in Computer Science Engineering",
       duration: "Expected Graduation: May 2027 · CGPA: 7.8/10.0",
-      desc: "Currently in 4th year (penultimate year). Relevant coursework: Data Structures & Algorithms, Operating Systems, Database Management Systems (SQL), Object-Oriented Programming, Distributed Systems, and System Design.",
-      descBullets: []
+     desc: "Currently in 4th year (penultimate year).",
+     descBullets: [
+    "Relevant Coursework: Data Structures & Algorithms, Operating Systems, Database Management Systems (SQL), Object-Oriented Programming, Distributed Systems, and System Design."
+  ]
     },
     {
       schoolName: "Maharaja Agrasen Public School",

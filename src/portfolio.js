@@ -138,7 +138,9 @@ const educationInfo = {
       subHeader: "Senior Secondary (Class XII) — CBSE",
       duration: "Delhi · 2023",
       desc: "Scored 87.6% in CBSE Class 12 board examinations.",
-      descBullets: []
+      descBullets: [
+    "Recognized as a National Finalist at the IRIS National Science Fair, ranking among the top 75 students nationwide."
+  ]
     }
   ]
 };

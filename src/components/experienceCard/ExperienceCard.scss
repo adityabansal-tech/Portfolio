@@ -79,14 +79,16 @@
 
 .experience-roundedimg {
   position: absolute;
-  object-fit: cover;
+  object-fit: contain;
   left: 0;
   right: 0;
   top: 7rem;
   margin-left: auto;
   margin-right: auto;
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 6.5rem;
+  height: 6.5rem;
+  padding: 0.6rem;
+  background-color: #ffffff;
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
 }

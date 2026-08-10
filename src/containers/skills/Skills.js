@@ -6,6 +6,7 @@ import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import skillsIllustration from "../../assets/images/skillsIllustration.svg";
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);
@@ -22,7 +23,7 @@ export default function Skills() {
             ) : (
               <img
                 alt="Man Working"
-                src={require("../../assets/images/developerActivity.svg")}
+                src={skillsIllustration}
               ></img>
             )}
           </div>

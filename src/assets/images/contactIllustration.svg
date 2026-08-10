@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 620">
+  <defs>
+    <linearGradient id="c_bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4c1d95" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="c_envTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2540"/>
+      <stop offset="100%" stop-color="#1a1729"/>
+    </linearGradient>
+    <linearGradient id="c_flap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <radialGradient id="c_orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="350" cy="310" r="270" fill="url(#c_bgGlow)"/>
+  <circle cx="140" cy="160" r="80" fill="url(#c_orb)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="4.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="570" cy="440" r="70" fill="url(#c_orb)">
+    <animate attributeName="opacity" values="1;0.6;1" dur="3.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <ellipse cx="350" cy="310" rx="250" ry="180" fill="none" stroke="#7c3aed" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="4 8">
+    <animateTransform attributeName="transform" type="rotate" from="0 350 310" to="360 350 310" dur="42s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- isometric envelope body -->
+  <g transform="translate(320,340)">
+    <animateTransform attributeName="transform" type="translate" values="320,340; 320,328; 320,340" dur="5.5s" repeatCount="indefinite"/>
+    <polygon points="0,-80 220,-10 220,110 0,180 -220,110 -220,-10" fill="url(#c_envTop)" stroke="#3a3552" stroke-width="1.5"/>
+    <polygon points="-220,-10 0,60 220,-10 220,-10 0,-80 -220,-10" fill="#241f38"/>
+    <polygon points="-220,-10 0,60 0,180 -220,110" fill="#1a1729"/>
+    <polygon points="220,-10 0,60 0,180 220,110" fill="#211d33"/>
+    <!-- flap (opening) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 0 -10; -18 0 -10; 0 0 -10" dur="5.5s" repeatCount="indefinite"/>
+      <polygon points="-220,-10 0,-95 220,-10 0,60" fill="url(#c_flap)" stroke="#4c3f7a" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- paper airplane flying out -->
+  <g transform="translate(430,220)">
+    <animateTransform attributeName="transform" type="translate" values="430,220; 560,120; 430,220" dur="5s" repeatCount="indefinite"/>
+    <polygon points="0,0 60,14 0,28 12,14" fill="#e2e0ec"/>
+    <polygon points="0,0 12,14 0,28" fill="#c4b5fd"/>
+  </g>
+
+  <!-- floating notification dot -->
+  <g transform="translate(220,200)">
+    <circle r="22" fill="#34d399">
+      <animate attributeName="r" values="22;26;22" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-9,0 L-2,8 L11,-9" stroke="#0f1117" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <circle cx="600" cy="200" r="4" fill="#a78bfa">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3.1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="110" cy="440" r="3" fill="#7c3aed">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2.7s" repeatCount="indefinite"/>
+  </circle>
+</svg>

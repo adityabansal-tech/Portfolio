@@ -16,14 +16,14 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
   username: "Aditya Bansal",
-  title: "Hi all, I'm Aditya",
+  title: "Hi, I'm Aditya Bansal",
   subTitle: emoji(
-    "A passionate Full Stack & Data-driven Software Developer 🚀 currently pursuing my B.Tech in Computer Science Engineering. I love building scalable backend systems, REST APIs, and AI/data-powered applications with Python, Flask, and SQL."
+    "Backend-focused Software Developer building AI-integrated, full-stack applications with Python, Flask, and modern LLM APIs. Computer Science undergraduate shipping production-deployed projects and real backend systems — not just coursework."
   ),
   resumeLink: `${process.env.PUBLIC_URL}/resume.pdf`, // Bundled from your uploaded resume — see notes below
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -173,8 +173,26 @@ const workExperiences = {
   display: true,
   experience: [
     {
+      role: "Python Developer Intern",
+      company: "Honeybee Digital",
+      companylogo: `${process.env.PUBLIC_URL}/logos/honeybee-digital-logo.jpg`,      date: "July 2026 -- Present",
+      desc: "Developing and maintaining backend features and automation scripts in Python, enabling seamless API integrations for client-facing digital products.",
+      descBullets: [
+        "Collaborating with the engineering team to debug, test, and optimize data-handling workflows, strengthening the reliability of internal tooling"
+      ]
+    },
+    {
+      role: "Freelance AI Model Trainer -- Prompt Engineering",
+      company: "Handshake AI",
+      companylogo: `${process.env.PUBLIC_URL}/logos/handshake-ai-logo.jpg`,      date: "Aug 2026 -- Present",
+      desc: "Designing and refining prompts to evaluate and benchmark large language model responses across technical and reasoning-based tasks.",
+      descBullets: [
+        "Delivering structured, detailed feedback on AI-generated outputs to support model fine-tuning and alignment"
+      ]
+    },
+    {
       role: "Quantitative Research & Software Engineering Simulation",
-      company: "J.P. Morgan Chase & Co.",
+      company: "J.P. Morgan Chase & Co. (via Forage)",
       companylogo: `${process.env.PUBLIC_URL}/logos/jpmorgan-logo.png`,      date: "July 2026",
       desc: "Engineered programmatic financial data solutions using Python, optimizing algorithmic execution to handle high-frequency data streams under fast-paced production conditions.",
       descBullets: [
@@ -208,7 +226,7 @@ const bigProjects = {
   subtitle: "AI, DATA & FULL-STACK PROJECTS I'VE BUILT",
   projects: [
     {
-      image: "https://opengraph.githubassets.com/1/adityabansal-tech/AI-resume-analyzer",
+      image: `${process.env.PUBLIC_URL}/project-screenshots/ai-resume-analyzer.png`,
       projectName: "AI-Powered Resume Analyzer",
       projectDesc:
         "End-to-end NLP system that extracts technical skills and programmatically matches candidates to job descriptions. Custom keyword-matching algorithms and text-parsing pipelines improved screening efficiency by ~50%.",
@@ -224,7 +242,7 @@ const bigProjects = {
       ]
     },
     {
-      image: "https://opengraph.githubassets.com/1/adityabansal-tech/SROS-main",
+      image: `${process.env.PUBLIC_URL}/project-screenshots/sros.png`,
       projectName: "Sustainable Routing Optimization System (SROS)",
       projectDesc:
         "Full-stack Flask web app that calculates real-time carbon emissions for transit routes and handles concurrent user API requests. Integrated Google Gemini LLM with structured prompt engineering to parse transit datasets, cutting data-processing overhead by 20%. Relational schema built with SQLAlchemy for high data integrity and low-latency lookups.",
@@ -240,7 +258,7 @@ const bigProjects = {
       ]
     },
     {
-      image: "https://opengraph.githubassets.com/1/adityabansal-tech/Sales-insights-analytics.",
+      image: `${process.env.PUBLIC_URL}/project-screenshots/sales-insights.png`,
       projectName: "Sales Insights & Relational Database Analytics",
       projectDesc:
         "Data analytics engine using Python and SQL to query and monitor large-scale historical sales KPIs. Optimized query parameters to compute revenue trends and product performance benchmarks, reducing manual processing overhead by ~40%.",
@@ -364,7 +382,7 @@ const talkSection = {
 // Podcast Section
 
 const podcastSection = {
-  title: emoji("Podcast 🎙️"),
+  title: "Podcast",
   subtitle: "",
   podcast: [],
   display: false // No podcast provided — set true and add an embed link above if applicable
@@ -378,7 +396,7 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: "Contact Me",
   subtitle:
     "Discuss a project, an internship opportunity, or just want to say hi? My inbox is open for all.",
 

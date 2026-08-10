@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 620">
+  <defs>
+    <linearGradient id="p_bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4c1d95" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="p_blockTopA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="p_blockTopB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b7ad1"/>
+      <stop offset="100%" stop-color="#6d4fc7"/>
+    </linearGradient>
+    <linearGradient id="p_blockTopC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c6bc4"/>
+      <stop offset="100%" stop-color="#5b3fb0"/>
+    </linearGradient>
+    <radialGradient id="p_orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="350" cy="320" r="270" fill="url(#p_bgGlow)"/>
+  <circle cx="560" cy="150" r="80" fill="url(#p_orb)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <ellipse cx="350" cy="420" rx="230" ry="50" fill="#0f1117" opacity="0.5"/>
+
+  <!-- isometric block 1 (tallest) -->
+  <g transform="translate(230,300)">
+    <animateTransform attributeName="transform" type="translate" values="230,300; 230,288; 230,300" dur="5s" repeatCount="indefinite"/>
+    <polygon points="0,-160 80,-118 80,42 0,84" fill="url(#p_blockTopA)"/>
+    <polygon points="0,-160 -80,-118 -80,42 0,84" fill="url(#p_blockTopB)" opacity="0.85"/>
+    <polygon points="0,-160 80,-118 0,-76 -80,-118" fill="#c4b5fd"/>
+  </g>
+
+  <!-- isometric block 2 (medium) -->
+  <g transform="translate(350,340)">
+    <animateTransform attributeName="transform" type="translate" values="350,340; 350,330; 350,340" dur="6s" repeatCount="indefinite"/>
+    <polygon points="0,-100 80,-58 80,44 0,86" fill="url(#p_blockTopA)"/>
+    <polygon points="0,-100 -80,-58 -80,44 0,86" fill="url(#p_blockTopB)" opacity="0.85"/>
+    <polygon points="0,-100 80,-58 0,-16 -80,-58" fill="#c4b5fd"/>
+  </g>
+
+  <!-- isometric block 3 (shortest) -->
+  <g transform="translate(470,370)">
+    <animateTransform attributeName="transform" type="translate" values="470,370; 470,362; 470,370" dur="4.5s" repeatCount="indefinite"/>
+    <polygon points="0,-60 80,-18 80,44 0,86" fill="url(#p_blockTopA)"/>
+    <polygon points="0,-60 -80,-18 -80,44 0,86" fill="url(#p_blockTopC)" opacity="0.85"/>
+    <polygon points="0,-60 80,-18 0,24 -80,-18" fill="#c4b5fd"/>
+  </g>
+
+  <!-- rising arrow -->
+  <g stroke="#34d399" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M180,260 L330,190 L440,240 L610,120">
+      <animate attributeName="stroke-dasharray" values="0,900;900,0" dur="3s" fill="freeze"/>
+    </path>
+    <path d="M580,100 L610,120 L595,150" />
+  </g>
+
+  <!-- orbit ring -->
+  <ellipse cx="350" cy="320" rx="270" ry="190" fill="none" stroke="#7c3aed" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="4 8">
+    <animateTransform attributeName="transform" type="rotate" from="360 350 320" to="0 350 320" dur="50s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <circle cx="120" cy="480" r="4" fill="#a78bfa">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="600" cy="450" r="3" fill="#34d399">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+</svg>

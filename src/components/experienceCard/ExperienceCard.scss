@@ -93,6 +93,11 @@
   border-radius: 50%;
 }
 
+.project-card-footer {
+  display: flex;
+  justify-content: center;
+}
+
 .experience-text-role {
   text-align: center;
   color: $textColor;

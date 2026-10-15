@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 820" role="img" aria-label="Animated illustration of a developer typing on a laptop, surrounded by floating API, analytics and code panels">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 98 700 714" role="img" aria-label="Animated illustration of a developer typing on a laptop, surrounded by floating API, analytics and code panels">
   <style>
     .orbit { transform-origin: 360px 470px; animation: spin 90s linear infinite; }
     .f1 { animation: float 6s ease-in-out infinite; }

@@ -61,6 +61,9 @@ const skillsSection = {
     ),
     emoji(
       "⚡ Integrate LLM / AI APIs (Google Gemini) into full-stack applications via structured prompt engineering"
+    ),
+    emoji(
+      "⚡ Automate workflows and debug, test and optimize production code with Python, Git and GitHub"
     )
   ],
 
@@ -179,7 +182,18 @@ const workExperiences = {
       companylogo: `${process.env.PUBLIC_URL}/logos/honeybee-digital-logo.jpg`,      date: "July 2026 -- Present",
       desc: "Developing and maintaining backend features and automation scripts in Python, enabling seamless API integrations for client-facing digital products.",
       descBullets: [
-        "Collaborating with the engineering team to debug, test, and optimize data-handling workflows, strengthening the reliability of internal tooling"
+        "Collaborating with the engineering team to debug, test, and optimize data-handling workflows, strengthening the reliability of internal tooling",
+        "Awarded \"Intern of the Month\" for September 2026 for outstanding performance, dedication, and valuable contributions"
+      ],
+      certificateLinks: [
+        {
+          name: "View Certificate",
+          url: `${process.env.PUBLIC_URL}/certificates/honeybee-python-internship-certificate.pdf`
+        },
+        {
+          name: "Intern of the Month",
+          url: `${process.env.PUBLIC_URL}/certificates/honeybee-intern-of-the-month-september-2026.pdf`
+        }
       ]
     },
     {

@@ -16,7 +16,8 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: false // Set to false to use static SVG
+  animated: false, // Set to false to use static SVG (What I do section)
+  hero: "character" // Main page visual: "character" (custom animated developer), "lottie" (developer at desk), or "static"
 };
 
 const greeting = {
@@ -182,12 +183,23 @@ const workExperiences = {
       ]
     },
     {
-      role: "Freelance AI Model Trainer -- Prompt Engineering",
-      company: "Handshake AI",
-      companylogo: `${process.env.PUBLIC_URL}/logos/handshake-ai-logo.jpg`,      date: "Aug 2026 -- Present",
-      desc: "Designing and refining prompts to evaluate and benchmark large language model responses across technical and reasoning-based tasks.",
+      role: "Data Analytics Intern",
+      company: "CodeAlpha",
+      companylogo: `${process.env.PUBLIC_URL}/logos/codealpha-logo.png`,
+      date: "Aug 2026 -- Sept 2026",
+      desc: "Completed a one-month virtual internship in Data Analytics, working with real-world datasets to clean, analyze, and visualize data and surface actionable insights.",
       descBullets: [
-        "Delivering structured, detailed feedback on AI-generated outputs to support model fine-tuning and alignment"
+        "Recognized in a Letter of Recommendation for strong analytical skills, quick adoption of new tools and technologies, and close collaboration with fellow team members"
+      ],
+      certificateLinks: [
+        {
+          name: "View Certificate",
+          url: `${process.env.PUBLIC_URL}/certificates/codealpha-data-analytics-certificate.pdf`
+        },
+        {
+          name: "View LOR",
+          url: `${process.env.PUBLIC_URL}/certificates/codealpha-letter-of-recommendation.pdf`
+        }
       ]
     },
     {

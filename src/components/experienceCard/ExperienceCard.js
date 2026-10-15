@@ -25,7 +25,14 @@ export default function ExperienceCard({cardInfo, isDark}) {
     win.focus();
   }
 
-  const GetDescBullets = ({descBullets, isDark}) => {
+  // Supports a single `certificateLink` or a list of `certificateLinks` ({name, url})
+  const certificateLinks = cardInfo.certificateLinks
+    ? cardInfo.certificateLinks
+    : cardInfo.certificateLink
+    ? [{name: "View Certificate", url: cardInfo.certificateLink}]
+    : [];
+
+  const GetDescBullets =({descBullets, isDark}) => {
     return descBullets
       ? descBullets.map((item, i) => (
           <li
@@ -86,14 +93,17 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
-        {cardInfo.certificateLink ? (
+        {certificateLinks.length > 0 ? (
           <div className="project-card-footer">
-            <span
-              className={isDark ? "dark-mode project-tag" : "project-tag"}
-              onClick={() => openUrlInNewTab(cardInfo.certificateLink)}
-            >
-              View Certificate
-            </span>
+            {certificateLinks.map((link, i) => (
+              <span
+                key={i}
+                className={isDark ? "dark-mode project-tag" : "project-tag"}
+                onClick={() => openUrlInNewTab(link.url)}
+              >
+                {link.name}
+              </span>
+            ))}
           </div>
         ) : null}
       </div>

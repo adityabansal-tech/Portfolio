@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-label="Analytics dashboard showing API traffic, service health, multi-cloud usage and a data pipeline">
+<defs>
+  <radialGradient id="glowA" gradientUnits="userSpaceOnUse" cx="300" cy="260" r="300">
+    <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.28"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowB" gradientUnits="userSpaceOnUse" cx="480" cy="620" r="160">
+    <stop offset="0%" stop-color="#10b981" stop-opacity="0.12"/><stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#181d29"/><stop offset="100%" stop-color="#12161f"/>
+  </linearGradient>
+  <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.38"/><stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#c4b5fd"/><stop offset="100%" stop-color="#7c3aed"/>
+  </linearGradient>
+  <linearGradient id="prog" gradientUnits="userSpaceOnUse" x1="92" y1="0" x2="548" y2="0">
+    <stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#34d399"/>
+  </linearGradient>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="140%">
+    <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/>
+  </filter>
+</defs>
+<rect width="640" height="800" fill="url(#glowA)"/><rect width="640" height="800" fill="url(#glowB)"/>
+<g filter="url(#shadow)"><rect x="16" y="20" width="608" height="312" rx="14" fill="url(#card)" stroke="#262d3d"/></g>
+<text x="38" y="54" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="1.6" fill="#8a92a6">API TRAFFIC</text>
+<rect x="546" y="38" width="58" height="24" rx="12" fill="#34d399" fill-opacity="0.12" stroke="#34d399" stroke-opacity="0.35"/>
+<circle cx="560" cy="50" r="3.5" fill="#34d399"><animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/></circle>
+<text x="569" y="54" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#34d399">LIVE</text>
+<text x="38" y="88" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="22" font-weight="600" fill="#e6e9f0">Requests per day</text>
+<rect x="404" y="79" width="14" height="3" rx="1.5" fill="#a78bfa"/><text x="424" y="84" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" fill="#8a92a6">Requests</text>
+<line x1="498" y1="80.5" x2="512" y2="80.5" stroke="#34d399" stroke-width="2" stroke-dasharray="3 3"/><text x="518" y="84" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" fill="#8a92a6">Latency</text>
+<line x1="46" y1="120.0" x2="596" y2="120.0" stroke="#232a39" stroke-dasharray="2 5"/>
+<line x1="46" y1="162.5" x2="596" y2="162.5" stroke="#232a39" stroke-dasharray="2 5"/>
+<line x1="46" y1="205.0" x2="596" y2="205.0" stroke="#232a39" stroke-dasharray="2 5"/>
+<line x1="46" y1="247.5" x2="596" y2="247.5" stroke="#232a39" stroke-dasharray="2 5"/>
+<line x1="46" y1="290.0" x2="596" y2="290.0" stroke="#232a39" stroke-dasharray="0"/>
+<path d="M46.0,232.2 C61.3,228.2 107.1,210.7 137.7,208.4 C168.2,206.1 198.8,222.9 229.3,218.6 C259.9,214.4 290.4,187.4 321.0,182.9 C351.6,178.4 382.1,195.9 412.7,191.4 C443.2,186.9 473.8,163.6 504.3,155.7 C534.9,147.8 580.7,145.8 596.0,143.8 L596,290 L46,290 Z" fill="url(#area)"/>
+<path d="M46.0,232.2 C61.3,228.2 107.1,210.7 137.7,208.4 C168.2,206.1 198.8,222.9 229.3,218.6 C259.9,214.4 290.4,187.4 321.0,182.9 C351.6,178.4 382.1,195.9 412.7,191.4 C443.2,186.9 473.8,163.6 504.3,155.7 C534.9,147.8 580.7,145.8 596.0,143.8" fill="none" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+<path d="M46.0,201.6 C61.3,203.9 107.1,213.8 137.7,215.2 C168.2,216.6 198.8,207.8 229.3,210.1 C259.9,212.4 290.4,226.8 321.0,228.8 C351.6,230.8 382.1,220.3 412.7,222.0 C443.2,223.7 473.8,235.3 504.3,239.0 C534.9,242.7 580.7,243.2 596.0,244.1" fill="none" stroke="#34d399" stroke-width="2" stroke-dasharray="4 5" stroke-linecap="round" opacity="0.85"/>
+<text x="46.0" y="314" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#4a5163">Mon</text>
+<text x="137.7" y="314" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#4a5163">Tue</text>
+<text x="229.3" y="314" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#4a5163">Wed</text>
+<text x="321.0" y="314" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#4a5163">Thu</text>
+<text x="412.7" y="314" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#4a5163">Fri</text>
+<text x="504.3" y="314" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#4a5163">Sat</text>
+<text x="596.0" y="314" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#4a5163">Sun</text>
+<line x1="504.3" y1="120" x2="504.3" y2="290" stroke="#a78bfa" stroke-opacity="0.35" stroke-dasharray="3 4"/>
+<circle cx="504.3" cy="155.7" r="9" fill="#a78bfa" fill-opacity="0.2"/><circle cx="504.3" cy="155.7" r="4.5" fill="#fff" stroke="#7c3aed" stroke-width="2.5"/>
+<rect x="336.3" y="133.7" width="150" height="46" rx="8" fill="#0d1017" stroke="#2f3749"/>
+<text x="348.3" y="151.7" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#8a92a6">Saturday</text>
+<text x="348.3" y="167.7" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6e9f0">All systems 200 OK</text>
+<g filter="url(#shadow)"><rect x="16" y="350" width="296" height="256" rx="14" fill="url(#card)" stroke="#262d3d"/></g>
+<text x="38" y="384" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="1.6" fill="#8a92a6">SERVICES</text>
+<rect x="32" y="408" width="264" height="38" rx="9" fill="#0f131b" stroke="#222938"/>
+<rect x="44" y="419" width="16" height="16" rx="4" fill="#a78bfa" fill-opacity="0.18" stroke="#a78bfa" stroke-opacity="0.7"/>
+<text x="70" y="425" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6e9f0">Auth API</text>
+<text x="70" y="439" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#8a92a6">Flask</text>
+<circle cx="234" cy="427" r="3.5" fill="#34d399"/>
+<text x="242" y="431" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#34d399">Healthy</text>
+<rect x="32" y="456" width="264" height="38" rx="9" fill="#0f131b" stroke="#222938"/>
+<rect x="44" y="467" width="16" height="16" rx="4" fill="#60a5fa" fill-opacity="0.18" stroke="#60a5fa" stroke-opacity="0.7"/>
+<text x="70" y="473" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6e9f0">Analytics Service</text>
+<text x="70" y="487" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#8a92a6">Pandas</text>
+<circle cx="234" cy="475" r="3.5" fill="#34d399"/>
+<text x="242" y="479" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#34d399">Healthy</text>
+<rect x="32" y="504" width="264" height="38" rx="9" fill="#0f131b" stroke="#222938"/>
+<rect x="44" y="515" width="16" height="16" rx="4" fill="#f472b6" fill-opacity="0.18" stroke="#f472b6" stroke-opacity="0.7"/>
+<text x="70" y="521" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6e9f0">LLM Gateway</text>
+<text x="70" y="535" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#8a92a6">Gemini</text>
+<circle cx="234" cy="523" r="3.5" fill="#34d399"/>
+<text x="242" y="527" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#34d399">Healthy</text>
+<rect x="32" y="552" width="264" height="38" rx="9" fill="#0f131b" stroke="#222938"/>
+<rect x="44" y="563" width="16" height="16" rx="4" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-opacity="0.7"/>
+<text x="70" y="569" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6e9f0">Reports DB</text>
+<text x="70" y="583" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#8a92a6">PostgreSQL</text>
+<circle cx="234" cy="571" r="3.5" fill="#34d399"/>
+<text x="242" y="575" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#34d399">Healthy</text>
+<g filter="url(#shadow)"><rect x="328" y="350" width="296" height="256" rx="14" fill="url(#card)" stroke="#262d3d"/></g>
+<text x="350" y="384" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="1.6" fill="#8a92a6">MULTI-CLOUD</text>
+<circle cx="412" cy="500" r="52" fill="none" stroke="#1f2533" stroke-width="16"/>
+<circle cx="412" cy="500" r="52" fill="none" stroke="#fbbf24" stroke-width="16" stroke-dasharray="107.1 219.6" stroke-dashoffset="0.0" transform="rotate(-90 412 500)"/>
+<circle cx="412" cy="500" r="52" fill="none" stroke="#60a5fa" stroke-width="16" stroke-dasharray="80.9 245.8" stroke-dashoffset="-111.1" transform="rotate(-90 412 500)"/>
+<circle cx="412" cy="500" r="52" fill="none" stroke="#a78bfa" stroke-width="16" stroke-dasharray="67.9 258.8" stroke-dashoffset="-196.0" transform="rotate(-90 412 500)"/>
+<circle cx="412" cy="500" r="52" fill="none" stroke="#f472b6" stroke-width="16" stroke-dasharray="54.8 271.9" stroke-dashoffset="-267.9" transform="rotate(-90 412 500)"/>
+<text x="412" y="498" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#e6e9f0">4</text>
+<text x="412" y="515" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" fill="#8a92a6">platforms</text>
+<rect x="486" y="445" width="10" height="10" rx="2.5" fill="#fbbf24"/>
+<text x="504" y="454" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" fill="#e6e9f0">AWS</text>
+<rect x="486" y="473" width="10" height="10" rx="2.5" fill="#60a5fa"/>
+<text x="504" y="482" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" fill="#e6e9f0">Google Cloud</text>
+<rect x="486" y="501" width="10" height="10" rx="2.5" fill="#a78bfa"/>
+<text x="504" y="510" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" fill="#e6e9f0">Azure</text>
+<rect x="486" y="529" width="10" height="10" rx="2.5" fill="#f472b6"/>
+<text x="504" y="538" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" fill="#e6e9f0">Oracle Cloud</text>
+<g filter="url(#shadow)"><rect x="16" y="624" width="608" height="160" rx="14" fill="url(#card)" stroke="#262d3d"/></g>
+<text x="38" y="658" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="1.6" fill="#8a92a6">DATA PIPELINE</text>
+<line x1="92" y1="706" x2="548" y2="706" stroke="#262d3d" stroke-width="3" stroke-linecap="round"/>
+<line x1="92" y1="706" x2="548" y2="706" stroke="url(#prog)" stroke-width="3" stroke-opacity="0.8" stroke-linecap="round"/>
+<circle cx="92.0" cy="706" r="21" fill="#0f131b" stroke="#a78bfa" stroke-width="1.8"/>
+<ellipse cx="92.0" cy="700" rx="8" ry="3" fill="none" stroke="#a78bfa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M84.0,700 v12 a8 3 0 0 0 16 0 v-12 M84.0,706 a8 3 0 0 0 16 0" fill="none" stroke="#a78bfa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="92.0" y="748" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6e9f0">Ingest</text>
+<text x="92.0" y="766" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#8a92a6">APIs · SQL</text>
+<circle cx="244.0" cy="706" r="21" fill="#0f131b" stroke="#8d9cf8" stroke-width="1.8"/>
+<path d="M235.0,699 h18 l-7,8 v6 l-4,2 v-8 z" fill="none" stroke="#8d9cf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="244.0" y="748" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6e9f0">Clean</text>
+<text x="244.0" y="766" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#8a92a6">Pandas</text>
+<circle cx="396.0" cy="706" r="21" fill="#0f131b" stroke="#5fc3c0" stroke-width="1.8"/>
+<path d="M389.0,711 L394.0,700 L400.0,708 L404.0,699" fill="none" stroke="#5fc3c0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="389.0" cy="711" r="1.8" fill="#5fc3c0"/>
+<circle cx="394.0" cy="700" r="1.8" fill="#5fc3c0"/>
+<circle cx="400.0" cy="708" r="1.8" fill="#5fc3c0"/>
+<circle cx="404.0" cy="699" r="1.8" fill="#5fc3c0"/>
+<text x="396.0" y="748" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6e9f0">Analyze</text>
+<text x="396.0" y="766" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#8a92a6">NumPy · Scikit-Learn</text>
+<circle cx="548.0" cy="706" r="21" fill="#0f131b" stroke="#34d399" stroke-width="1.8"/>
+<path d="M540.0,713 h16 M543.0,710 v-5 M548.0,710 v-10 M553.0,710 v-7" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="548.0" y="748" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6e9f0">Visualize</text>
+<text x="548.0" y="766" text-anchor="middle" font-family="'Montserrat','Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#8a92a6">Power BI · Tableau</text>
+</svg>

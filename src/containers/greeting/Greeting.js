@@ -1,13 +1,14 @@
 import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
+import heroDeveloper from "../../assets/lottie/heroDeveloper";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import heroIllustration from "../../assets/images/heroIllustration.svg";
+import heroCharacter from "../../assets/images/heroCharacter.svg";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -52,8 +53,15 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
+            {illustration.hero === "lottie" ? (
+              <div className="greeting-lottie-div">
+                <DisplayLottie animationData={heroDeveloper} />
+              </div>
+            ) : illustration.hero === "character" ? (
+              <img
+                alt="Animated developer working on a laptop, surrounded by API, analytics and code cards"
+                src={heroCharacter}
+              ></img>
             ) : (
               <img
                 alt="Backend developer workspace illustration"

@@ -98,6 +98,15 @@
   justify-content: center;
 }
 
+.experience-text-details .project-card-footer {
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.experience-text-details .project-card-footer span.project-tag {
+  margin: 0 0 0.5rem 0;
+}
+
 .experience-text-role {
   text-align: center;
   color: $textColor;
